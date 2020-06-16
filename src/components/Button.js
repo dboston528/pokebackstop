@@ -1,4 +1,5 @@
 import React from 'react';
+import Dutton from 'react-bootstrap/Button';
 
 class Button extends React.Component {
   constructor(props) {
@@ -28,9 +29,9 @@ class Button extends React.Component {
 function getAppContent(handleClick) {
   return (
     <div>
-      <button id="clap" className="poke_button" onClick={handleClick}>
+      <Dutton id="clap" className="poke_button" onClick={handleClick}>
         <h1>Add Pokemon</h1>
-      </button>
+      </Dutton>
     </div>
   );
 }

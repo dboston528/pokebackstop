@@ -5,6 +5,7 @@ import Pokemon from '../components/Pokemon';
 import Button from '../components/Button';
 import { fetchPokemon } from '../actions';
 import { Charmander } from '../components/Charmander';
+import Navbar from '../components/Navbar';
 
 const StyledApp = styled.div`
   min-height: 100vh;
@@ -32,6 +33,7 @@ class App extends Component {
     const { name, height, sprites, base_experience, weight } = this.props.data;
     return (
       <StyledApp>
+        <Navbar />
         <aside>
           <Button />
         </aside>
