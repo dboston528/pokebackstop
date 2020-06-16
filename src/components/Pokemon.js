@@ -2,9 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledArticle = styled.div`
+  background-color: navy;
+  border-radius: 10px;
+  padding: 25px;
+  font-color: white;
+
   img {
     height: 100px;
-    border: 1px solid #ddd;
   }
 
   h1 {
@@ -28,8 +32,6 @@ const StyledArticle = styled.div`
 
 const Pokemon = ({
   name = '',
-  subtitle = '',
-  paragraphs = [],
   squirtleHeight = '',
   squirtleImage = '',
   squirtleBase,
@@ -43,10 +45,6 @@ const Pokemon = ({
       <h1>Base Experince</h1>
       <h2>{squirtleBase}</h2>
       <h1>{squirtleWeight}</h1>
-
-      {paragraphs.map((paragraph) => (
-        <p key={paragraph.text}>{paragraph.text}</p>
-      ))}
     </StyledArticle>
   );
 };

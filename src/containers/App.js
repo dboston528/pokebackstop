@@ -8,6 +8,7 @@ import { Charmander } from '../components/Charmander';
 import Navbar from '../components/Navbar';
 
 const StyledApp = styled.div`
+  background-color: #ffd740;
   min-height: 100vh;
   display: flex;
   align-items: center;
