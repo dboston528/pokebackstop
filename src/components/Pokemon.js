@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledArticle = styled.div`
+const CardStyle = styled.div`
   background-color: navy;
   border-radius: 10px;
   padding: 25px;
-  font-color: white;
+  color: white;
 
   img {
     height: 100px;
@@ -14,7 +14,7 @@ const StyledArticle = styled.div`
   h1 {
     font-weight: 700;
     font-size: 36px;
-    color: #000000;
+
     margin: 0;
   }
   h4 {
@@ -26,7 +26,6 @@ const StyledArticle = styled.div`
   p {
     font-weight: 300;
     font-size: 18px;
-    color: #4a4a4a;
   }
 `;
 
@@ -38,14 +37,16 @@ const Pokemon = ({
   squirtleWeight,
 }) => {
   return (
-    <StyledArticle>
+    <CardStyle>
       <h1>{name}</h1>
-      <img src={squirtleImage.front_default} alt="Squirtle"></img>
-      <h1>{squirtleHeight}</h1>
-      <h1>Base Experince</h1>
-      <h2>{squirtleBase}</h2>
-      <h1>{squirtleWeight}</h1>
-    </StyledArticle>
+      <img src={squirtleImage.front_default} alt="Pokemon Image"></img>
+      <h3>Height</h3>
+      <p>{squirtleHeight}</p>
+      <h3>Base Experince</h3>
+      <p>{squirtleBase}</p>
+      <h3>Weight</h3>
+      <p>{squirtleWeight}</p>
+    </CardStyle>
   );
 };
 
