@@ -29,8 +29,8 @@ class Button extends React.Component {
 function getAppContent(handleClick) {
   return (
     <div>
-      <Dutton id="clap" className="poke_button" onClick={handleClick}>
-        <h1>Add Pokemon</h1>
+      <Dutton className="poke_button btn-danger" onClick={handleClick}>
+        <h1>Get Pokemon</h1>
       </Dutton>
     </div>
   );

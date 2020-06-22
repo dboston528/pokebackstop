@@ -34,7 +34,6 @@ class App extends Component {
     const { name, height, sprites, base_experience, weight } = this.props.data;
     return (
       <StyledApp>
-        <Navbar />
         <aside>
           <Button />
         </aside>
@@ -51,10 +50,7 @@ class App extends Component {
             />
           )}
         </main>
-        <main>
-          {' '}
-          <Charmander />
-        </main>
+        <main> </main>
       </StyledApp>
     );
   }

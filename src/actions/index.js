@@ -1,13 +1,13 @@
 import { SET_POKEMON, API, FETCH_POKEMON } from './types';
 
-export function fetchPokemon(id) {
+export const fetchPokemon = (id) => {
   return apiAction({
     url: `https://pokeapi.co/api/v2/pokemon/${id}/`,
     onSuccess: setPokemon,
     onFailure: () => console.log('Error occured loading pokemon'),
     label: FETCH_POKEMON,
   });
-}
+};
 
 function setPokemon(data) {
   return {

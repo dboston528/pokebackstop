@@ -39,7 +39,11 @@ const Pokemon = ({
   return (
     <CardStyle>
       <h1>{name}</h1>
-      <img src={squirtleImage.front_default} alt="Pokemon Image"></img>
+      <img
+        height={300}
+        src={squirtleImage.front_default}
+        alt="Pokemon Image"
+      ></img>
       <h3>Height</h3>
       <p>{squirtleHeight}</p>
       <h3>Base Experince</h3>

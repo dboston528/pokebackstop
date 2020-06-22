@@ -6,9 +6,10 @@ import App from './containers/App';
 import registerServiceWorker from './registerServiceWorker';
 import store from './store';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Navbar from './components/Navbar';
 ReactDOM.render(
   <Provider store={store}>
+    <Navbar />
     <App />
   </Provider>,
   document.getElementById('root')
